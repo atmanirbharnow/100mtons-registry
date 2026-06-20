@@ -77,6 +77,26 @@
             text-align: left;
         }
 
+        /* 3-Column Fee Grid */
+        .govuk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
+        }
+        .govuk-card {
+            border: 1px solid #bfc1c3;
+            background: #f3f2f1;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .price-tag {
+            font-weight: bold;
+            color: #0b0c0c;
+        }
+
         .govuk-button {
             background-color: #00703c;
             color: #ffffff;
@@ -90,6 +110,16 @@
         }
         .govuk-button:hover { background-color: #005a30; }
 
+        /* Step Process List */
+        ol.govuk-list--number {
+            margin-left: 25px;
+            font-size: 19px;
+        }
+        ol.govuk-list--number li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
         footer {
             margin-top: 60px;
             border-top: 1px solid #bfc1c3;
@@ -102,74 +132,116 @@
 <body>
 
     <div class="govuk-header">
-        <div class="govuk-header__title">Build The Largest Environmental Asset Movement</div>
+        <div class="govuk-header__title">100-Million-Tonne Environmental Movement</div>
     </div>
 
     <div class="govuk-width-container">
         <main>
             <!-- SECTION 1: HERO -->
             <h1>100 Million Tons By 2030</h1>
-            <p>Every registered asset contributes to a global climate impact goal.</p>
+            <p>Every solar installation, water project, waste solution, and tree plantation contributes to a larger climate impact. Register your environmental assets and help build one of the world's largest environmental asset movements.</p>
             <a href="https://forms.gle/z3iSDpJiWSADPxMm6" class="govuk-button" style="margin-bottom: 20px;">Join The Movement</a>
 
-            <!-- SECTION 2: PROBLEM -->
-            <h2>1. The Documentation Gap</h2>
-            <p>Most low-carbon actions are never documented. By leaving critical sustainability shifts unrecorded, organizations fail to track their contributions to global carbon metrics.</p>
+            <!-- SECTION 2: THE HIDDEN PROBLEM -->
+            <h2>1. The Hidden Problem</h2>
+            <p><strong>Most Environmental Actions Are Never Counted.</strong> Across schools, universities, industries, hospitals, communities and farms:</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Solar systems are installed</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Trees are planted</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Water is conserved</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 20px;">✓ Waste is diverted</p>
+            <p>But most of these actions are never documented, tracked or recognized. <strong>If it isn't measured, it doesn't count.</strong></p>
 
-            <!-- SECTION 3: MISSION -->
+            <!-- SECTION 3: WHY 100 MILLION TONS? -->
+            <h2>2. A Simple Mission</h2>
+            <p>Today only a small fraction of environmental actions are formally documented. Our goal is simple, one registered asset at a time:</p>
+            
             <div class="mission-counter-panel">
-                <div class="mission-counter__label">Participation Progression Target</div>
+                <div class="mission-counter__label">National Target Aggregation Journey</div>
                 <div class="mission-counter__number">100 Million Tons By 2030</div>
                 <p style="margin-bottom: 0; font-size: 18px; color: #003020; font-weight: bold;">
-                    8% Participation Today &rarr; 9% Participation Tomorrow
+                    8% Participation Today &nbsp;&rarr;&nbsp; 9% Participation Tomorrow
                 </p>
             </div>
 
-            <!-- SECTION 4: REGISTRY CATEGORIES -->
-            <h2>2. Registry Tier Architecture</h2>
+            <!-- SECTION 4: DEVELOPMENT PATHWAY -->
+            <h2>3. Development Pathway</h2>
+            <p>Every asset starts somewhere. Every participant contributes to the mission regardless of size:</p>
+            
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Registry Category</th>
-                        <th>Target Operational Scope</th>
-                        <th>Status</th>
+                        <th>Development Status</th>
+                        <th>CER Potential</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td>Initial baseline entry point for active verification routing</td><td>Active</td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td>Pre-screened tracking slots aligned for regional assessment</td><td>Active</td></tr>
-                    <tr><td><strong>Starter</strong></td><td>Core asset processing groups transitioning to validation locks</td><td>Active</td></tr>
-                    <tr><td><strong>Growth</strong></td><td>Expanded capacity infrastructure arrays running ongoing checks</td><td>Active</td></tr>
-                    <tr><td><strong>Institutional</strong></td><td>Enterprise-scale programmatic footprints mapped for minting</td><td>Active</td></tr>
+                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td>101–500</td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td></tr>
                 </tbody>
             </table>
 
-            <!-- SECTION 5: LIVE PROGRESS -->
-            <h2>3. Live Target Aggregation Pipeline</h2>
+            <!-- SECTION 5: DEVELOPMENT PROGRAMS -->
+            <h2>4. Development Programs</h2>
+            <p>Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
+            
+            <table class="govuk-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,799</strong></td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
+                </tbody>
+            </table>
+
+            <!-- SECTION 6: LIVE PROGRESS -->
+            <h2>5. Building Toward 100 Million Tons</h2>
+            <p>Track real-time collective velocity across participating sectors:</p>
+            
             <table class="govuk-table">
                 <thead>
                     <tr>
                         <th>Metric Type</th>
-                        <th>Current Tracking Total</th>
+                        <th>Progress Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr><td><strong>Registered Assets</strong></td><td>1,000</td></tr>
-                    <tr><td><strong>Organizations</strong></td><td>250 (Starter: 250 | Growth: 100 | Institutional: 25)</td></tr>
+                    <tr><td><strong>Organizations</strong></td><td>250</td></tr>
                     <tr><td><strong>Countries</strong></td><td>1</td></tr>
                     <tr><td><strong>tCO₂e Pipeline</strong></td><td>500,000</td></tr>
                 </tbody>
             </table>
 
-            <!-- SECTION 6: CTA -->
-            <h2>4. Advance to Shared Intake</h2>
-            <p>Bring your clean metrics out of documentation backlogs. Submit your parameter logs directly to our centralized processing loop.</p>
+            <!-- SECTION 7: WHAT HAPPENS AFTER REGISTRATION? -->
+            <h2>6. What Happens After Registration?</h2>
+            <p>Our process is simple and transparent, tracking your contribution through milestones:</p>
+            
+            <ol class="govuk-list--number" style="margin-bottom: 40px;">
+                <li><strong>Register Your Asset:</strong> Complete a quick 2-minute registration to list what you have built.</li>
+                <li><strong>Receive Registry ID:</strong> Secure your official, safe tracking profile number.</li>
+                <li><strong>Asset Classification:</strong> Your environmental parameters are categorized.</li>
+                <li><strong>Development Screening:</strong> Your project is reviewed for structural growth paths.</li>
+                <li><strong>Opportunity Review:</strong> Access the platform framework to evaluate future options.</li>
+            </ol>
+
+            <h2>7. Every Environmental Asset Matters</h2>
+            <p>Whether you operate a school, university, MSME, hospital, society, industry or farm, your environmental actions deserve to be counted.</p>
             <a href="https://forms.gle/z3iSDpJiWSADPxMm6" class="govuk-button" style="margin-top: 10px;">Register My Asset</a>
         </main>
 
         <footer>
             <p>Sovereign Environmental Data Systems | <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
-            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">All data systems adhere to the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim to maintain operational parameters under the DPDP Act 2023.</p>
+            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">Data processing frameworks comply explicitly with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim to enforce user protection metrics under the DPDP Act 2023.</p>
         </footer>
     </div>
 
