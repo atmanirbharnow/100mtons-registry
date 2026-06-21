@@ -84,6 +84,28 @@
             font-style: italic;
         }
 
+        /* Progress Bar Panel Styles */
+        .progress-wrapper {
+            margin: 25px 0 40px 0;
+            background-color: #f3f2f1;
+            border: 4px solid #00703c;
+            padding: 20px;
+        }
+        .progress-container {
+            background: #e2e8f0;
+            border-radius: 20px;
+            height: 24px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            width: 17%; 
+            background: linear-gradient(90deg, #2d6a4f 0%, #40916c 100%);
+            height: 100%;
+            border-radius: 20px;
+        }
+
         .govuk-button {
             background-color: #00703c;
             color: #ffffff;
@@ -225,11 +247,21 @@
                 <tbody>
                     <tr><td><strong>Participants</strong></td><td>1,158+</td></tr>
                     <tr><td><strong>Assets Identified</strong></td><td>800+</td></tr>
-                    <tr><td><strong>Annual tCO₂e Pipeline</strong></td><td>17,000+</td></tr>
                     <tr><td><strong>Climate Impact (tCO₂e)</strong></td><td>20,426+</td></tr>
                     <tr><td><strong>States Covered</strong></td><td>1+</td></tr>
                 </tbody>
             </table>
+
+            <!-- Custom 100M Ton Progress Tracker Element -->
+            <div class="progress-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-family: Arial, sans-serif;">
+                    <span style="font-size: 18px; color: #003020;">Mission Target Progress: 100M Tons by 2030</span>
+                    <span style="font-size: 16px; color: #b01a1a;">Still To Go: 99,983,000 tCO₂e</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
 
             <!-- SECTION 6: WHAT HAPPENS AFTER REGISTRATION? -->
             <h2>5. What Happens After Registration?</h2>
