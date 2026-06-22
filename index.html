@@ -84,6 +84,22 @@
             margin-bottom: 30px;
             font-style: italic;
         }
+        .inclusion-list {
+            margin: 20px 0;
+            list-style: none;
+            font-size: 19px;
+        }
+        .inclusion-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .inclusion-list li::before {
+            content: "•";
+            color: #00703c;
+            font-weight: bold;
+            margin-right: 10px;
+        }
 
         /* Progress Bar Panel Styles */
         .progress-wrapper {
@@ -185,7 +201,6 @@
 </head>
 <body>
 
-    <!-- EARTH CARBON FOUNDATION UNIFIED NAV BAR -->
     <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px;">
         <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
             <a href="https://earthcarbonfoundation.org" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
@@ -196,19 +211,15 @@
             </div>
         </div>
     </div>
-    <!-- END NAV BAR -->
-
     <div class="govuk-header">
         <div class="govuk-header__title" style="max-width: 1100px; margin: 0 auto;">100-Million-Tonne Environmental Movement</div>
     </div>
 
     <div class="govuk-width-container">
         <main>
-            <!-- SECTION 1: HERO -->
             <h1>100 Million Tons By 2030</h1>
             <p>Every solar installation, water project, waste solution, and tree plantation contributes to a larger climate impact. Register your environmental assets and help build one of the world's largest environmental asset movements.</p>
 
-            <!-- LEAD METRIC & PUBLIC BADGE STRUCTURE -->
             <div style="background-color: #f3f2f1; border-left: 10px solid #00703c; padding: 25px; margin-bottom: 35px;">
                 <h3 style="color: #003020; margin-bottom: 15px; text-transform: uppercase; font-size: 16px; letter-spacing: 0.5px;">Lead Metric Framework</h3>
                 <div style="font-size: 28px; font-weight: 700; color: #0b0c0c; margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
@@ -223,7 +234,6 @@
 
             <a href="https://forms.gle/fpooZY7rQp1iunNg9" target="_blank" class="govuk-button" style="margin-bottom: 20px;">Join The Movement</a>
 
-            <!-- SECTION 2: THE HIDDEN PROBLEM -->
             <h2>1. The Hidden Problem</h2>
             <p><strong>Most Environmental Actions Are Never Counted.</strong> Across schools, universities, industries, hospitals, communities and farms:</p>
             <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Solar systems are installed</p>
@@ -232,7 +242,6 @@
             <p style="font-size: 19px; padding-left: 20px; margin-bottom: 20px;">✓ Waste is diverted</p>
             <p>But most of these actions are never documented, tracked or recognized. <strong>If it isn't measured, it doesn't count.</strong></p>
 
-            <!-- SECTION 3: WHY 100 MILLION TONS? -->
             <h2>2. A Simple Mission</h2>
             <p>Today only a small fraction of environmental actions are formally documented. Our goal is simple, one registered asset at a time:</p>
             
@@ -244,51 +253,68 @@
                 </p>
             </div>
 
-            <!-- SECTION 4: DEVELOPMENT PATHWAY & PROGRAMS MERGED -->
-            <h2>3. Registry Development Pathways</h2>
+            <h2>3. Climate Asset Registry Participation</h2>
             <p>Every asset starts somewhere. Every participant contributes to the mission regardless of size. Development-ready assets may qualify for advanced growth paths. Fees apply only after review and classification:</p>
             
             <table class="govuk-table">
                 <thead>
                     <tr>
                         <th>Development Status</th>
-                        <th>CER Potential</th>
+                        <th>Asset Size (kW Equivalent)</th>
                         <th>Annual Registry Contribution</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><strong>Registered Asset</strong></td>
-                        <td>1–100</td>
+                        <td>1–50 kW</td>
                         <td><span class="status-tag">Free</span></td>
                     </tr>
                     <tr>
                         <td><strong>Watchlist</strong></td>
-                        <td>101–500</td>
-                        <td><span class="status-tag">Free</span></td>
+                        <td>51–250 kW</td>
+                        <td><strong>₹4,999</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>Starter Development</strong></td>
-                        <td>501–5,000</td>
-                        <td><strong>₹3,999</strong></td>
+                        <td><strong>Starter </strong></td>
+                        <td>251–500 kW</td>
+                        <td><strong>₹9,999</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>Growth Development</strong></td>
-                        <td>5,001–25,000</td>
-                        <td><strong>₹7,999</strong></td>
+                        <td><strong>Growth </strong></td>
+                        <td>501–750 kW</td>
+                        <td><strong>₹14,999</strong></td>
                     </tr>
                     <tr>
-                        <td><strong>Institutional Development</strong></td>
-                        <td>25,000+</td>
-                        <td><strong>₹11,999</strong></td>
+                        <td><strong>Institutional </strong></td>
+                        <td>751 kW–1 MW</td>
+                        <td><strong>₹19,999</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Corporate </strong></td>
+                        <td>Above 1 MW</td>
+                        <td><strong>On Request</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strategic Projects</strong></td>
+                        <td>Large / Complex Assets</td>
+                        <td><strong>Proposal on Request</strong></td>
                     </tr>
                 </tbody>
             </table>
-            <div class="table-note-sub">
-                Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
-            </div>
 
-            <!-- SECTION 5: LIVE PROGRESS -->
+            <h3 style="margin-top: 30px;">Includes:</h3>
+            <ul class="inclusion-list">
+                <li>12 Months Registry Participation</li>
+                <li>Registry ID & Registry Link</li>
+                <li>Climate Asset Tracking</li>
+                <li>Opportunity Assessment</li>
+                <li>Development Screening</li>
+                <li>Methodology Mapping</li>
+                <li>Eligibility Review</li>
+                <li>Access to Future Bundled Program Consideration</li>
+            </ul>
+
             <h2>4. Building Toward 100 Million Tons</h2>
             <p>Track real-time collective velocity across participating sectors:</p>
             
@@ -307,7 +333,6 @@
                 </tbody>
             </table>
 
-            <!-- Custom 100M Ton Progress Tracker Element -->
             <div class="progress-wrapper">
                 <div style="display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-family: Arial, sans-serif;">
                     <span style="font-size: 18px; color: #003020;">100M Ton Target by 2030 Tracker</span>
@@ -318,13 +343,11 @@
                 </div>
             </div>
 
-            <!-- NEW SECTION: SHARE YOUR IMPACT (PLACED BELOW KPI COUNTERS) -->
             <div class="impact-share-box">
                 <h2 style="margin-top: 0; border-bottom: none; padding-bottom: 0; font-size: 32px;">Share Your Impact</h2>
                 <p style="font-size: 18px; color: #505a5f; margin-bottom: 15px;">Environmental action becomes more powerful when it is visible.</p>
                 
                 <div class="impact-grid-row">
-                    <!-- Deliverables Card -->
                     <div class="impact-column-card">
                         <h4>Every Participant Receives</h4>
                         <ul class="impact-list-raw">
@@ -336,7 +359,6 @@
                         </ul>
                     </div>
                     
-                    <!-- Example Signatures Card -->
                     <div class="impact-column-card">
                         <h4>Example Impact Signatures</h4>
                         <ul class="impact-list-raw">
@@ -347,7 +369,6 @@
                         </ul>
                     </div>
                     
-                    <!-- Use Cases Card -->
                     <div class="impact-column-card">
                         <h4>Where Participants Use Them</h4>
                         <ul class="impact-list-raw" style="color: #0b0c0c; font-weight: 600;">
@@ -363,7 +384,6 @@
                 </div>
             </div>
 
-            <!-- SECTION 6: WHAT HAPPENS AFTER REGISTRATION? -->
             <h2>5. What Happens After Registration?</h2>
             <p>Our process is simple and transparent, tracking your contribution through milestones:</p>
             
@@ -384,7 +404,6 @@
         <p style="margin-top: 10px; margin-bottom: 60px; font-size: 14px; color: #505a5f; max-width: 1100px;">Data processing frameworks comply explicitly with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim to enforce user protection metrics under the DPDP Act 2023.</p>
     </div>
 
-    <!-- EARTH CARBON FOUNDATION MASTER BRAND FOOTER -->
     <footer style="background-color: #081c15; color: white; text-align: center; padding: 60px 20px; font-family: Arial, sans-serif; font-size: 0.95rem; border-top: 5px solid #2d6a4f; width: 100%;">
         <div style="font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 6px; color: #ffffff;">Earth Carbon Foundation</div>
         <div style="color: #b7e4c7; font-size: 0.95rem; margin-bottom: 35px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;">Measure. Register. Develop. Grow.</div>
@@ -400,7 +419,5 @@
             <a href="https://earthcarbonfoundation.org/campus" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Atmanirbhar Campus Index</a>
         </div>
     </footer>
-    <!-- END MASTER BRAND FOOTER -->
-
-</body>
+    </body>
 </html>
